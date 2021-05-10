@@ -46,7 +46,6 @@ public class Main {
 
     private static void transitions(String letters, List<Node> previous) {
         for (char letter : letters.toUpperCase(Locale.ROOT).toCharArray()) {
-            System.out.println(letter);
             Node current = previous.get(previous.size() - 1);
             Node next = current.getNext(letter);
             if (next == null) {
